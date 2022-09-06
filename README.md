@@ -12,7 +12,7 @@ Linters (Lighthouse, Webhint, Stylelint, Eslint)
 Git/GitHub work-flow
 
 ## LIVE DEMO
-[[Project : To-do list]()
+[[Project : Leaderboard]()
 
 ## Getting Started
 
