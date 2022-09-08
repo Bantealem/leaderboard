@@ -55,6 +55,10 @@ body {
   padding: 1rem;
 }
 
+.second-color {
+  background-color: grey;
+}
+
 .table-input {
   width: 50%;
 }
