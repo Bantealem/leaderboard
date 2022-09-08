@@ -21,9 +21,7 @@ body {
   padding: 3em;
 }
 
-.even {
-  background-color: grey;
-}
+
 
 .content {
   display: flex;
@@ -76,12 +74,6 @@ button[type="button"] {
 }
 
 .form input[type="text"] {
-  width: 50%;
-  padding: 15px;
-  margin-bottom: 1rem;
-}
-
-.form input[type="number"] {
   width: 50%;
   padding: 15px;
   margin-bottom: 1rem;
