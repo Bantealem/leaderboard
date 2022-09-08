@@ -21,6 +21,10 @@ body {
   padding: 3em;
 }
 
+.second-color {
+  background-color: grey;
+}
+
 .content {
   display: flex;
 }
