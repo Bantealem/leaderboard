@@ -14,15 +14,34 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 3em;
 }
 
-.second-color {
-  background-color: grey;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #00013c;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 1rem;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+main {
+  padding: 1rem;
+}
+
+.even {
+  background-image: linear-gradient(to right, rgb(0, 255, 135), rgb(2, 239, 255));
+}
+
+.icon {
+  margin-bottom: 2rem;
 }
 
 .content {
@@ -37,11 +56,18 @@ body {
 }
 
 .top-bar {
-  width: 50%;
+  width: 74%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 2rem;
+}
+
+.top-bar h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: rgb(0, 0, 0);
 }
 
 .table {
@@ -64,15 +90,35 @@ body {
 button[type="button"] {
   padding: 0.5rem 1rem;
   margin-left: 0.5rem;
+  background-image: linear-gradient(to right, rgb(0, 255, 135), rgb(2, 239, 255));
+  border: none;
+  cursor: pointer;
+  color: #000;
 }
 
 .table-input h2 {
   margin-bottom: 2rem;
+  color: #37003c;
+  font-size: 2rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+}
+
+::placeholder {
+  color: #37003c;
+}
+
+.report {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to right, rgb(0, 4, 255), rgba(11, 243, 30, 0.815));
 }
 
 .form input[type="text"] {
@@ -81,8 +127,113 @@ button[type="button"] {
   margin-bottom: 1rem;
 }
 
+.form input[type="number"] {
+  width: 50%;
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+
 .form button[type="submit"] {
   width: 20%;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
   align-items: flex-end;
+  background-image: linear-gradient(to right, rgb(0, 255, 135), rgb(2, 239, 255));
+  border: none;
+  cursor: pointer;
+  margin-left: 12.5rem;
+}
+
+@media (max-width: 1024px) {
+  .table-container {
+    width: 100%;
+  }
+
+  .table {
+    width: 80%;
+  }
+
+  .table-input {
+    width: 100%;
+  }
+
+  .table-input h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2.1rem;
+  }
+
+  .report {
+    width: 100%;
+  }
+
+  .form input[type="text"] {
+    width: 80%;
+  }
+
+  .form input[type="number"] {
+    width: 80%;
+  }
+
+  .form button[type="submit"] {
+    width: 80%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-container svg {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    width: 100%;
+  }
+
+  .table {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .table-input {
+    width: 100%;
+  }
+
+  .table-input h2 {
+    font-size: 3rem;
+  }
+
+  .report {
+    width: 100%;
+  }
+
+  .form input[type="text"] {
+    width: 100%;
+  }
+
+  .form input[type="number"] {
+    width: 100%;
+  }
+
+  .form button[type="submit"] {
+    width: 100%;
+  }
+
+  .table-container svg {
+    width: 16rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .table-container {
+    width: 100%;
+  }
 }
