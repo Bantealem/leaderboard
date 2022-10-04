@@ -12,7 +12,7 @@ Linters (Lighthouse, Webhint, Stylelint, Eslint)
 Git/GitHub work-flow
 
 ## LIVE DEMO
-https://fancy-arithmetic-6379c7.netlify.app/
+[Live Demo](https://fancy-arithmetic-6379c7.netlify.app/)
 
 ## Getting Started
 
