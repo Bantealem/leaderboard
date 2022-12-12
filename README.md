@@ -42,6 +42,24 @@ If you are non a technical person you can download the zip file.
 - Remember to use the mouse to navigate through the website. Also you can use the keys 'arrow up' and 'arrow down' of your keyboard
   to scroll up and down.
 
+## Screen Shots
+
+### Desktop Screen
+
+![Desktop Screen](src/image/screen-shots/Capture3.PNG)
+
+### Tablet Screen
+
+![Tablet Screen](src/image/screen-shots/Capture2.PNG)
+
+### Mobile Screen
+
+![Mobile Screen](src/image/screen-shots/Capture1.PNG)
+
+## Live Preview
+
+[Live Demo]()
+
 ## Author
 
 👤 **Author**

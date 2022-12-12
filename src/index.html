@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leaderboard</title>
-</head>
-
-<body>
-    <nav>
-        <h1>Leaderboard</h1>
-    </nav>
-    <main class="content">
-        <section class="table-container">
-            <div class="top-bar">
-                <h2>Scores Table</h2>
-                <button class="refresh" type="button">Refresh</button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leader Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div role="alert" id="success"></div>
+      <div role="alert" id="error"></div>
+      <h1 class="text-white">Leaderboard</h1>
+      <div class="row my-5">
+        <div class="col-sm-12 col-md-6 order-last order-sm-last order-md-first">
+          <div class="card shadow">
+            <div class="card-header">Badminton Player Scores</div>
+            <div class="card-body">
+              <div class="d-flex">
+                <h2 class="me-2">Recent Scores</h2>
+                <button class="btn btn-primary" id="refresh">Refresh</button>
+              </div>
+              <table class="table table-striped table-hover mt-2">
+                <thead class="table-primary">
+                  <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody id="results" class="table-group-divider">
+                  <tr>
+                    <td colspan="2">
+                      Please press refresh button and see the scores
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="table">
-                <ul class="list">
-                </ul>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 order-first order-sm-first order-md-last mb-3 mb-sm-3 mb-md-0"
+        >
+          <div class="card">
+            <div class="card-header">Add Your Score</div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="nameField" class="form-label text-primary"
+                    >Name</label
+                  >
+                  <input type="text" class="form-control" id="nameField" />
+                </div>
+                <div class="mb-3">
+                  <label for="scoreField" class="form-label text-primary"
+                    >Score</label
+                  >
+                  <input type="number" class="form-control" id="scoreField" />
+                </div>
+                <button type="submit" class="btn btn-primary" id="saveScore">
+                  Submit
+                </button>
+              </form>
             </div>
-        </section>
-        <section class="table-input">
-            <h2>Add Your score</h2>
-            <form class="form">
-                <p class="report"></p>
-                <input type="text" class="name" name="name" placeholder="Your name" id="name">
-                <input type="number" class="score" name="score" placeholder="Your score" id="score">
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-</body>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
