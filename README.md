@@ -58,7 +58,7 @@ If you are non a technical person you can download the zip file.
 
 ## Live Preview
 
-[Live Demo]()
+[Live Demo](https://superlative-gingersnap-366cd3.netlify.app/)
 
 ## Author
 
